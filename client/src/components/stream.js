@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { TwitchEmbed } from 'react-twitch-embed';
+
+import '../styles/stream.css';
 import api from '../api';
 
-class LiveStream extends Component {
+class Stream extends Component {
     constructor(props) {
         super(props);
         this.state= {
@@ -17,11 +20,12 @@ class LiveStream extends Component {
 
     render() {
         return (
-            <div>
+            <div className='nl-stream__container'>
                 LiveStream Component Init
+                {/* <TwitchEmbed channel='Jankos' theme='dark' muted/> */}
             </div>
         )
     }
 }
 
-export default LiveStream;
+export default Stream;

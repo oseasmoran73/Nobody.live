@@ -1,0 +1,8 @@
+.nl-navigation__container {
+    display: flex;
+    border: 1px red solid;
+}
+
+.nl-navigation__item {
+    flex-grow: 1;
+}

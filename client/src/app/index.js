@@ -1,23 +1,19 @@
-import { LiveStream } from '../pages';
+import { NavBar, Stream } from '../components';
 
 function App() {
   return (
-    <div className="nl-app__container">
-      <nav className="nl-navigation__container">
-        <div>LOGO</div>
-        <div>SEARCH BOX</div>
-        <div>CONFIG?</div>
-      </nav>
-      <div className="nl-app__content">
-        <div className="nl-video-player__container">
+    <div className='nl-app__container'>
+      <NavBar />
+      <div className='nl-app__content'>
+        <div className='nl-video-player__container'>
           VIDEO HERE
-          <LiveStream />
+          <Stream />
         </div>
         <div>
           CHAT
         </div>
       </div>
-      <footer className="nl-footer__container">
+      <footer className='nl-footer__container'>
         FOOTER HERE
       </footer>
     </div>
